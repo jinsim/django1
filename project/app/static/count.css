@@ -1,0 +1,39 @@
+body    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+.top  {
+    height: 8rem;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 158, 185);
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+}
+.title span {
+    font-size: 3rem;
+}
+/* textarea {
+    border-color: crimson;
+}
+input {
+    border-color: crimson;
+    color: crimson;
+} */
+.bot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 30rem;
+    background-color: thistle;
+    border-color: rgb(238, 158, 185);
+    color: rgb(238, 158, 185);
+}

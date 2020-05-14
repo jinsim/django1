@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'count.css' %}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <div class="top">
+        <h1 class = "title">
+            <span class="material-icons">
+            edit
+            </span>
+        글자를 입력해보세요!</h1> 
+    </div>
+    <div class="bot">
+        <form action="{% url 'result' %}" method="POST">{% csrf_token %} 
+            <textarea name="text" cols="60" rows="10"></textarea> 
+            <br> 
+            <input type="submit" value="제출하기"> 
+        </form>
+    </div>
+</body>
+</html>
